@@ -13,6 +13,7 @@ body{
     border-radius: 20px;
     background-color: #002062;
     overflow: hidden;
+    height: 100vh;
 }
 
 .sec-one{
@@ -21,6 +22,9 @@ body{
     justify-content: center;
     align-items: center ;
     text-align: center;
+    width: 60%;
+    flex-wrap: wrap;
+    gap: 17px;
 }
 
 .sec-one .img-logo{
@@ -34,7 +38,7 @@ body{
 }
 
 .sec-one h1{
-    font-size: 33px;
+    font-size: 31px;
     color: #ffffff;
 }
 
@@ -87,6 +91,7 @@ body{
     font-weight: 400;
     font-size: 16px;
     color: #ffffff;
+    cursor: pointer;
 }
 
 .sec-one .form-sec .pass-sec svg{
@@ -111,6 +116,8 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
+    flex-wrap: wrap;
+    gap: 8px;
 }
 
 .sec-one .sign-in-sec .sign-btn{
@@ -118,7 +125,7 @@ body{
 }
 
 .sec-one .sign-in-sec .sign-btn button{
-    width: 350px;
+    width: 292px;
     height: 45px;
     background-color: #1A4FBA; 
     color: white; 
@@ -151,12 +158,16 @@ body{
 }
 
 .sec-one .sign-in-sec .google{
-    width: 350px;
+    width: 292px;
     height: 45px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: #a1a1a1;
+    padding-top: 11px;
+    background-color: #0F2D6B;
+    flex-wrap: wrap;
+    gap: 9px;
+    cursor: pointer;
+    border-radius: 10px; 
 }
 
 .sec-one .sign-in-sec .google svg{
@@ -164,31 +175,104 @@ body{
     width: 24px;
 }
 
-.sec-one .sign-in-sec .google p{}
+.sec-one .sign-in-sec .google p{
+    font-size: 16px;
+    color: white;
+}
 
-.sec-one .sign-in-sec .facebook{}
+.sec-one .sign-in-sec .facebook{
+    width: 292px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    padding-top: 11px;
+    background-color: #0F2D6B;
+    flex-wrap: wrap;
+    gap: 9px;
+    cursor: pointer;
+    border-radius: 10px; 
+}
 
-.sec-one .sign-in-sec .facebook svg{}
+.sec-one .sign-in-sec .facebook svg{
+    height: 24px;
+    width: 24px;
+    margin-left: 16px;
+}
 
-.sec-one .sign-in-sec .facebook p{}
+.sec-one .sign-in-sec .facebook p{
+    font-size: 16px;
+    color: white;
+}
 
-.sec-one .sign-in-sec .apple{}
+.sec-one .sign-in-sec .apple{
+    width: 292px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    padding-top: 11px;
+    background-color: #0F2D6B;
+    flex-wrap: wrap;
+    gap: 9px;
+    cursor: pointer;
+    border-radius: 10px; 
+}
 
-.sec-one .sign-in-sec .apple svg{}
+.sec-one .sign-in-sec .apple svg{
+    height: 24px;
+    width: 24px;
+}
 
-.sec-one .sign-in-sec .apple p{}
+.sec-one .sign-in-sec .apple p{
+    font-size: 16px;
+    color: white;
+}
+
+.details{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.details p{
+    font-size: 13px;
+    color: #9B9B9B;
+    cursor: pointer;
+}
+
+.details a{
+    color: #4671C6;
+    text-decoration: none;
+    font-size: 14px;
+}
 
 .sec-two{
     display: flex;
     justify-content: right;
     height: 679px;
-    width: 900px;
+    width: 100%;
+    height: 100%;
 }
 
 .sec-two img{
     height: 100%;
     width: 100%;
 }
+
+@media screen and (max-width:900px) {
+    .sec-two{
+        display: none;
+    }
+
+    .sec-one{
+        width: 100%;
+        margin: 0px auto;
+    }
+    
+}
+
+
 
 
 
